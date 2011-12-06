@@ -1,0 +1,77 @@
+package WebService::GlucoseBuddy::Log;
+# ABSTRACT: A log from a glucosebuddy logfile
+
+use Moose 1.24;
+use namespace::autoclean 0.13;
+
+
+has reading => (
+    is  => 'ro',
+    isa => 'WebService::GlucoseBuddy::Log::Reading',
+);
+
+
+has name => (
+    is  => 'ro',
+    isa => 'Str',
+);
+
+
+has event => (
+    is  => 'ro',
+    isa => 'Str',
+);
+
+
+has time => (
+    is  => 'ro',
+    isa => 'DateTime',
+);
+
+
+has notes => (
+    is  => 'ro',
+    isa => 'Str',
+);
+
+__PACKAGE__->meta->make_immutable;
+
+1;
+
+
+__END__
+=pod
+
+=head1 NAME
+
+WebService::GlucoseBuddy::Log - A log from a glucosebuddy logfile
+
+=head1 VERSION
+
+version 1.113400
+
+=head1 ATTRIBUTES
+
+=head2 reading
+
+=head2 name
+
+=head2 event
+
+=head2 time
+
+=head2 notes
+
+=head1 AUTHOR
+
+Pete Smith <pete@cubabit.net>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Pete Smith.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+

@@ -1,0 +1,12 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/WebService/GlucoseBuddy.pm
+lib/WebService/GlucoseBuddy/Log.pm
+lib/WebService/GlucoseBuddy/Log/Reading.pm
+t/01-logs.t
+t/02-live.t
