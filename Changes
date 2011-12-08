@@ -1,4 +1,8 @@
 Revision history for WebService-GlucoseBuddy
 
+1.113420  2011-12-08 23:25:38 Europe/London
+    Add from and to date options to search logs
+    Improve documentation
+
 1.113400  2011-12-06 16:13:55 Europe/London
     Initial release

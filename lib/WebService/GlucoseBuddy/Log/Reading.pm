@@ -36,15 +36,21 @@ WebService::GlucoseBuddy::Log::Reading - A reading from a glucosebuddy log
 
 =head1 VERSION
 
-version 1.113400
+version 1.113420
 
 =head1 ATTRIBUTES
 
 =head2 type
 
+The type of reading
+
 =head2 value
 
+Teh value of the reading
+
 =head2 unit
+
+The units used for the reading
 
 =head1 AUTHOR
 

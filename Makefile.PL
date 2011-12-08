@@ -12,6 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Interface to a glucosebuddy.com account",
   "AUTHOR" => "Pete Smith <pete\@cubabit.net>",
   "BUILD_REQUIRES" => {
+    "DateTime" => "0.70",
     "Test::MockObject" => "1.20110612",
     "Test::More" => "0.98",
     "URI" => "1.59",
@@ -35,7 +36,7 @@ my %WriteMakefileArgs = (
     "WWW::Mechanize" => "1.70",
     "namespace::autoclean" => "0.13"
   },
-  "VERSION" => "1.113400",
+  "VERSION" => "1.113420",
   "test" => {
     "TESTS" => "t/*.t"
   }

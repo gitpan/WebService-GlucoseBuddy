@@ -48,19 +48,30 @@ WebService::GlucoseBuddy::Log - A log from a glucosebuddy logfile
 
 =head1 VERSION
 
-version 1.113400
+version 1.113420
 
 =head1 ATTRIBUTES
 
 =head2 reading
 
+A L<WebService::GlucoseBuddy::Log::Reading> object for the reading
+
 =head2 name
+
+The name given for the log entry
 
 =head2 event
 
+The event name for the log entry
+
 =head2 time
 
+A L<DateTime> object for the time of the reading. This has a floating timezone as glucosebuddy.com
+does not provide one.
+
 =head2 notes
+
+Notes for the log entry
 
 =head1 AUTHOR
 
