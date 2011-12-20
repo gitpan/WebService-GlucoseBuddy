@@ -1,4 +1,7 @@
 package WebService::GlucoseBuddy::Log::Reading;
+{
+  $WebService::GlucoseBuddy::Log::Reading::VERSION = '1.113540';
+}
 # ABSTRACT: A reading from a glucosebuddy log
 
 use Moose 1.24;
@@ -36,7 +39,7 @@ WebService::GlucoseBuddy::Log::Reading - A reading from a glucosebuddy log
 
 =head1 VERSION
 
-version 1.113420
+version 1.113540
 
 =head1 ATTRIBUTES
 

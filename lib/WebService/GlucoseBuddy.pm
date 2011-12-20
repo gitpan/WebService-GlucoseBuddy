@@ -1,4 +1,7 @@
 package WebService::GlucoseBuddy;
+{
+  $WebService::GlucoseBuddy::VERSION = '1.113540';
+}
 # ABSTRACT: Interface to a glucosebuddy.com account
 
 use Moose 1.24;
@@ -43,7 +46,7 @@ sub _build__mech {
     $mech->get($SERVICE_URI . '/login');
 
     unless ($mech->success) {
-        carp 'Could not connect to glucosebuddy.com';
+        croak 'Could not connect to glucosebuddy.com';
     }
 
     $mech->submit_form(
@@ -54,7 +57,7 @@ sub _build__mech {
     );
 
     unless ($mech->uri->path eq '/logs/new') {
-        carp 'Log in failed';
+        croak 'Log in failed';
     }
 
     return $mech;
@@ -148,7 +151,7 @@ WebService::GlucoseBuddy - Interface to a glucosebuddy.com account
 
 =head1 VERSION
 
-version 1.113420
+version 1.113540
 
 =head1 METHODS
 

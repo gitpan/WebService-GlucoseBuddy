@@ -4,6 +4,7 @@ MANIFEST
 META.yml
 Makefile.PL
 README
+bin/glucose-report
 dist.ini
 lib/WebService/GlucoseBuddy.pm
 lib/WebService/GlucoseBuddy/Log.pm

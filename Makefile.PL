@@ -12,7 +12,6 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Interface to a glucosebuddy.com account",
   "AUTHOR" => "Pete Smith <pete\@cubabit.net>",
   "BUILD_REQUIRES" => {
-    "DateTime" => "0.70",
     "Test::MockObject" => "1.20110612",
     "Test::More" => "0.98",
     "URI" => "1.59",
@@ -23,20 +22,27 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => "6.30"
   },
   "DISTNAME" => "WebService-GlucoseBuddy",
-  "EXE_FILES" => [],
+  "EXE_FILES" => [
+    "bin/glucose-report"
+  ],
   "LICENSE" => "perl",
   "NAME" => "WebService::GlucoseBuddy",
   "PREREQ_PM" => {
     "Carp" => "1.20",
+    "DateTime" => "0.70",
     "DateTime::Format::Strptime" => "1.5",
+    "Getopt::Long" => "2.38",
+    "MIME::Lite" => "3.027",
+    "Modern::Perl" => "1.03",
     "Moose" => "1.24",
     "MooseX::Iterator" => "0.11",
     "Readonly" => "1.03",
+    "Text::ASCIITable" => "0.20",
     "Text::CSV" => "1.21",
     "WWW::Mechanize" => "1.70",
     "namespace::autoclean" => "0.13"
   },
-  "VERSION" => "1.113420",
+  "VERSION" => "1.113540",
   "test" => {
     "TESTS" => "t/*.t"
   }
